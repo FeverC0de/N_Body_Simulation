@@ -1,5 +1,51 @@
-﻿# simulation
+# Optimizing Cache Locality with Morton Orders in Parallel Barnes-Hut N-Body Simulation
 
-This is a real-time visualizations with OpenGL to demonstrate spatial partitioning rendering over 150,000 bodies at ~30 Frames Per Second.
+##  Overview
+This project explores how **Morton ordering (Z-order curves)** can optimize cache locality and improve the efficiency of **parallel Barnes-Hut N-body simulations**.  
 
-Feel free to run the .exe file for a demonstrations. Changes can be made by editting the C++ code!
+Starting from a brute-force N-body implementation (O(N²)), the project moves through:
+- Implementing the **Barnes-Hut algorithm** (O(N log N)),
+- Leveraging **parallelization with OpenMP**,
+- Introducing **Morton ordering for improved memory locality** and predictable tree construction,
+- Combining these techniques to enable **real-time simulations with up to ~150,000 bodies**.
+
+The result: up to **15x performance improvement** over the naive brute-force approach.
+
+---
+
+##  Features
+- **Brute Force Simulation** – O(N²) baseline with Euler’s method for integration.  
+- **Barnes-Hut Algorithm** – Quad/Oct-Tree spatial partitioning to approximate forces.  
+- **Parallel Force Calculation** – OpenMP parallelization for acceleration updates.  
+- **Parallel Tree Construction** – Morton ordering improves cache locality and enables parallel quad-tree building.  
+- **Real-Time Visualization** – Bodies rendered with OpenGL for interactive simulation.  
+
+---
+
+## Performance Highlights
+- Brute force method becomes unusable beyond ~10,000 bodies.  
+- Barnes-Hut reduces compute time drastically with **O(N log N)** scaling.  
+- Morton ordering improves **cache efficiency**, reducing tree build cost by ~202%.  
+- Parallel tree construction achieves a **5.14x speedup** compared to unsorted sequential builds.  
+- Overall, the optimized implementation allows **real-time simulation of ~150k bodies**.  
+
+---
+
+##  Technologies Used
+- **C++** (core simulation)  
+- **OpenGL** (real-time rendering)  
+- **OpenMP** (parallelization)  
+
+### Prerequisites
+- C++17 (or later)  
+- OpenGL (>= 3.3)  
+- OpenMP  
+
+
+## References
+- Grama, A., et al. *Scalable Parallel Formulations of the Barnes–Hut Method for N-Body Simulations.* Parallel Computing, 1998.  
+- Tokuue, T., & Ishiyama, T. *Optimizing the gravitational tree algorithm for many-core processors.* MNRAS, 2023.  
+- StackExchange – [Initializing positions of n-body simulations](https://physics.stackexchange.com/q/749288)  
+
+---
+
