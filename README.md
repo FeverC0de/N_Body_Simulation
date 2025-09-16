@@ -36,7 +36,7 @@ The result: up to **15x performance improvement** over the naive brute-force app
 - Overall, the optimized implementation allows **real-time simulation of ~150k bodies**.  
 
 ---
-<img width="1354" height="1107" alt="image" src="https://github.com/user-attachments/assets/1fa530d1-83d2-4a4e-9f2d-4d2c703dd933" />
+<img width="1144" height="1034" alt="image" src="https://github.com/user-attachments/assets/08c40881-b723-430c-bc0a-2f78ff6a7a5a" />
 
 ##  Technologies Used
 - **C++** (core simulation)  
@@ -55,6 +55,7 @@ The result: up to **15x performance improvement** over the naive brute-force app
 - StackExchange – [Initializing positions of n-body simulations](https://physics.stackexchange.com/q/749288)  
 
 ---
+
 
 
 
