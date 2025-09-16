@@ -1,8 +1,8 @@
 # Optimizing Cache Locality with Morton Orders in Parallel Barnes-Hut N-Body Simulation
-
-##  Overview
 I built this because I love emergent thingies. N Body seemed like a good start in exploring how simple rules create complicated behaviour! 
 This also made be overly obsessed with optimization. The goal is to continue optimizing the code to run as many particles as possible.
+##  Overview
+
 
 <img width="1274" height="917" alt="image" src="https://github.com/user-attachments/assets/ee6074a6-db95-4201-91a4-af84cc5b82be" />
 
@@ -54,6 +54,7 @@ The result: up to **15x performance improvement** over the naive brute-force app
 - StackExchange – [Initializing positions of n-body simulations](https://physics.stackexchange.com/q/749288)  
 
 ---
+
 
 
 
