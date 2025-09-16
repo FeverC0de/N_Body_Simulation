@@ -6,7 +6,7 @@ This also made be overly obsessed with optimization. The goal is to continue opt
 
 <img width="1274" height="917" alt="image" src="https://github.com/user-attachments/assets/ee6074a6-db95-4201-91a4-af84cc5b82be" />
 
-Awesome galaxies!
+
 
 
 Starting from a brute-force N-body implementation (O(N²)), the project moves through:
@@ -54,5 +54,6 @@ The result: up to **15x performance improvement** over the naive brute-force app
 - StackExchange – [Initializing positions of n-body simulations](https://physics.stackexchange.com/q/749288)  
 
 ---
+
 
 
