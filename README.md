@@ -2,11 +2,7 @@
 I built this because I love emergent thingies. N Body seemed like a good start in exploring how simple rules create complicated behaviour! 
 This also made be overly obsessed with optimization. The goal is to continue optimizing the code to run as many particles as possible.
 ##  Overview
-
-
-<img width="1274" height="917" alt="image" src="https://github.com/user-attachments/assets/ee6074a6-db95-4201-91a4-af84cc5b82be" />
-
-
+Check out this video: [https://www.youtube.com/watch?v=Inr_S0k9pwc](https://www.youtube.com/watch?v=Inr_S0k9pwc)
 
 
 Starting from a brute-force N-body implementation (O(N²)), the project moves through:
@@ -27,6 +23,7 @@ The result: up to **15x performance improvement** over the naive brute-force app
 - **Real-Time Visualization** – Bodies rendered with OpenGL for interactive simulation.  
 
 ---
+<img width="1274" height="917" alt="image" src="https://github.com/user-attachments/assets/ee6074a6-db95-4201-91a4-af84cc5b82be" />
 
 ## Performance Highlights
 - Brute force method becomes unusable beyond ~10,000 bodies.  
@@ -55,6 +52,7 @@ The result: up to **15x performance improvement** over the naive brute-force app
 - StackExchange – [Initializing positions of n-body simulations](https://physics.stackexchange.com/q/749288)  
 
 ---
+
 
 
 
