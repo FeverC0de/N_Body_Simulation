@@ -1,4 +1,4 @@
-# Optimizing Cache Locality with Morton Orders in Parallel Barnes-Hut N-Body Simulation
+# Optimized Parallel Barnes-Hut N-Body Simulation with Z-Order Curves
 I built this because I love emergent thingies. N Body seemed like a good start in exploring how simple rules create complicated behaviour! 
 This also made be overly obsessed with optimization. The goal is to continue optimizing the code to run as many particles as possible.
 ##  Overview
